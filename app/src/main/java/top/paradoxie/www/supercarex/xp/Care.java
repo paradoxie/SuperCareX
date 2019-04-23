@@ -1,4 +1,4 @@
-package top.paradoxie.www.supercarex;
+package top.paradoxie.www.supercarex.xp;
 
 import android.app.ActivityManager;
 import android.app.AndroidAppHelper;
@@ -29,7 +29,7 @@ import static android.content.Context.ACTIVITY_SERVICE;
 
 public class Care implements IXposedHookLoadPackage {
 
-    private Uri userUri = Uri.parse("content://top.paradoxie.www.supercarex.BookProvider/user");
+    private Uri userUri = Uri.parse("content://top.paradoxie.www.supercarex.provider.BookProvider/user");
     private List<String> users = new ArrayList<>();
     private Context mContext;
     private static final String TAG = "获取当前的运行包名";

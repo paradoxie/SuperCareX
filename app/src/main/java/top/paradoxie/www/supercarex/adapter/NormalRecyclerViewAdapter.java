@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 import java.util.List;
 
-import top.paradoxie.www.supercarex.DbOpenHelper;
+import top.paradoxie.www.supercarex.provider.DbOpenHelper;
 import top.paradoxie.www.supercarex.MainActivity;
 import top.paradoxie.www.supercarex.MyApplication;
 import top.paradoxie.www.supercarex.R;

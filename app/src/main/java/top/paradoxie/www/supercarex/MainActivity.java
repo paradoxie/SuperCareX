@@ -26,7 +26,7 @@ import top.paradoxie.www.supercarex.view.EmptyRecyclerView;
 public class MainActivity extends AppCompatActivity {
     private EmptyRecyclerView mRecyclerView;
     private DialogView mDialogView;
-    private Uri userUri = Uri.parse("content://top.paradoxie.www.supercarex.BookProvider/user");
+    private Uri userUri = Uri.parse("content://top.paradoxie.www.supercarex.provider.BookProvider/user");
     private ContentValues contentValues = new ContentValues();
     private List<String> users = new ArrayList<>();
     public static List<String> ids = new ArrayList<>();

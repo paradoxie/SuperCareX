@@ -31,8 +31,8 @@
         </activity>
 
         <provider
-            android:name=".BookProvider"
-            android:authorities="top.paradoxie.www.supercarex.BookProvider"
+            android:name=".provider.BookProvider"
+            android:authorities="top.paradoxie.www.supercarex.provider.BookProvider"
             android:exported="true"/>
     </application>
 

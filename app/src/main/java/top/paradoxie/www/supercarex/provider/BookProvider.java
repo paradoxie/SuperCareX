@@ -1,4 +1,4 @@
-package top.paradoxie.www.supercarex;
+package top.paradoxie.www.supercarex.provider;
 
 import android.content.ContentProvider;
 import android.content.ContentValues;
@@ -14,7 +14,7 @@ public class BookProvider extends ContentProvider {
 
     private SQLiteDatabase sqLiteDatabase;
 
-    public static final String AUTHORITY = "top.paradoxie.www.supercarex.BookProvider";
+    public static final String AUTHORITY = "top.paradoxie.www.supercarex.provider.BookProvider";
 
 
     public static final int USER_URI_CODE = 1;
