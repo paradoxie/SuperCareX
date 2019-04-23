@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="top.paradoxie.www.supercarex">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/icon"
+        android:name=".MyApplication"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="xposedmodule"
+            android:value="true" />
+        <meta-data
+            android:name="xposeddescription"
+            android:value="有些人的消息，不立马回复是要完蛋的ಥ_ಥ！！此服务是帮助您不错过任何一个想要看见并需要及时回复的消息。" />
+        <meta-data
+            android:name="xposedminversion"
+            android:value="54" />
+
+        <activity android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name=".BookProvider"
+            android:authorities="top.paradoxie.www.supercarex.BookProvider"
+            android:exported="true"/>
+    </application>
+
+</manifest>

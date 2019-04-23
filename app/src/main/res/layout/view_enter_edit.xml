@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lLayout_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_view"
+    android:orientation="vertical"
+    android:padding="40dp">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/heart"
+       android:layout_marginBottom="15dp"
+        android:layout_gravity="center"/>
+
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dip"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:text="输入炒鸡关心的昵称(*^__^*)"
+        android:textColor="@color/colorPrimary"/>
+
+    <top.paradoxie.www.supercarex.view.ClearableEditText
+        android:id="@+id/et_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textSize="18dip"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_neg"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/search_label"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@android:color/black"
+            android:textSize="18dip"/>
+
+        <View
+            android:layout_width="0.7dip"
+            android:layout_height="50dip"
+            android:background="#1bbc9b"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btn_pos"
+            android:layout_width="wrap_content"
+            android:layout_height="50dip"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/search_label_sure"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@android:color/white"
+            android:textSize="18dip"/>
+    </LinearLayout>
+
+</LinearLayout>
